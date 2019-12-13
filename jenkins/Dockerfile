@@ -28,8 +28,8 @@ RUN \
     pip3 install git+https://github.com/arista-northwest/shakedown.git &&\
     pip install tox
 
-COPY bin/sdtest /usr/local/bin/sdtest
-RUN chmod +x /usr/local/bin/sdtest
+# COPY bin/sdtest /usr/local/bin/sdtest
+# RUN chmod +x /usr/local/bin/sdtest
 
 # COPY job-template.xml /var/jenkins_home/jobs/Shakedown-Template/config.xml
 COPY job-template.xml /var/tmp/job-template.xml

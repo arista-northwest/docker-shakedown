@@ -25,6 +25,7 @@ RUN \
     pip3 install tinydb && \
     pip3 install tinymongo && \
     pip3 install git+https://github.com/arista-northwest/eapi-py.git && \
+    pip3 install git+https://github.com/arista-northwest/shakedown.git &&\
     pip install tox
 
 COPY bin/sdtest /usr/local/bin/sdtest
